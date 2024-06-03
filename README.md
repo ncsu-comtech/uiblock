@@ -2,7 +2,7 @@
 
 A simple javascript based UI blocker to let users know they need to wait for a process to finish while disabling the user's ability to interact with the page.  This is useful for Ajax calls that may take some time to process.
 
-Usage: Add an include or script tag to your project with appropriate path to uiBLock.js.  Then call the functions where necessary.
+Usage: Add an include or script tag to your project with appropriate path to uiBlock.js.  Then call the functions where necessary.
 
 // add the ui block container and message
 uiBlock.loadBlock();
