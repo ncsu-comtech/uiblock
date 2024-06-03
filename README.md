@@ -40,7 +40,7 @@ Example JS code:
     };
 </script>
 ```
-    CSS code:
+CSS code:
 ```css
     <style>
         #blockoverlay {
