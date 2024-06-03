@@ -11,6 +11,7 @@ uiBlock.loadBlock();
 uiBlock.closeBlock();
 
 Example JS code:
+```javascript
 <script>
     const handleSubmit = (e) => {
         //////////////
@@ -37,8 +38,9 @@ Example JS code:
             }
         };
     };
-
+```
     CSS code: 
+    ```css
     #blockoverlay {
         z-index: 2000;
         border: none;
@@ -76,3 +78,4 @@ Example JS code:
         margin: 0;
         color: #000;
     }
+    ```
