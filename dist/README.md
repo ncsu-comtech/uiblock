@@ -40,45 +40,45 @@ Example JS code:
     };
 </script>
 ```
-    CSS code: 
-    ```css
+    CSS code:
+```css
     <style>
-    #blockoverlay {
-        z-index: 2000;
-        border: none;
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        height: 100%;
-        top: 0px;
-        left: 0px;
-        background-color: rgb(0, 0, 0);
-        opacity: 0.6;
-        cursor: wait;
-        position: fixed;
-        transition: opacity .5s;
-    }
-    #blockmsg {
-        z-index: 2010;
-        position: fixed;
-        padding: 0px;
-        margin: 0px;
-        width: 30%;
-        top: 40%;
-        left: 35%;
-        text-align: center;
-        color: rgb(0, 0, 0);
-        border: 0px;
-        background-color: rgb(255, 255, 255);
-        cursor: wait;
-        border-radius: 10px;
-        transition: opacity .5s;
-    }
-    #blockmsg p {
-        font-size: 14px;
-        padding: 20px;
-        margin: 0;
-        color: #000;
-    }
+        #blockoverlay {
+            z-index: 2000;
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.6;
+            cursor: wait;
+            position: fixed;
+            transition: opacity .5s;
+        }
+        #blockmsg {
+            z-index: 2010;
+            position: fixed;
+            padding: 0px;
+            margin: 0px;
+            width: 30%;
+            top: 40%;
+            left: 35%;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            border: 0px;
+            background-color: rgb(255, 255, 255);
+            cursor: wait;
+            border-radius: 10px;
+            transition: opacity .5s;
+        }
+        #blockmsg p {
+            font-size: 14px;
+            padding: 20px;
+            margin: 0;
+            color: #000;
+        }
     </style>
-    ```
+```
