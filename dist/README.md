@@ -38,9 +38,11 @@ Example JS code:
             }
         };
     };
+</script>
 ```
     CSS code: 
     ```css
+    <style>
     #blockoverlay {
         z-index: 2000;
         border: none;
@@ -78,4 +80,5 @@ Example JS code:
         margin: 0;
         color: #000;
     }
+    </style>
     ```
