@@ -5,17 +5,17 @@ A simple javascript based UI blocker to let users know they need to wait for a p
 Usage: Add an include or script tag to your project with appropriate path to uiBlock.js.  Then call the functions where necessary.
 
 // add the ui block container and message
-uiBlock.loadBlock();
+loadBlock();
 
 // remove the ui block container and message
-uiBlock.closeBlock();
+closeBlock();
 
 Example JS code:
 ```javascript
 <script>
     const handleSubmit = (e) => {
         //////////////
-        uiBlock.loadBlock();
+        loadBlock();
         //////////////
         const data = new FormData(e.target);
         const dataentries = Object.fromEntries(data);
@@ -28,7 +28,7 @@ Example JS code:
         xhr.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 //////////////
-                uiBlock.closeBlock();
+                closeBlock();
                 //////////////
                 let info = xhr.responseText;
                 let container = document.getElementById("containerid");

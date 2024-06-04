@@ -2,7 +2,7 @@
   "name": "uiblock",
   "version": "0.0.1",
   "description": "Javascript module that halts UI interaction while a process completes.",
-  "main": "./dist/unBlock.js",
+  "main": "uiBlock.js",
   "directories": {
     "test": "test"
   },
