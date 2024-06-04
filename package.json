@@ -1,0 +1,19 @@
+{
+  "name": "uiblock",
+  "version": "0.0.1",
+  "description": "Javascript module that halts UI interaction while a process completes.",
+  "main": "./dist/unBlock.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gppaone/uiBlock.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["javascript", "overlay"],
+  "author": "G. Paone",
+  "license": "MIT"
+}
