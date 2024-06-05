@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uiBlock Example</title>
+  </head>
+  <body>
+    <button type="button" onClick="blockBodyAction()">UI Block</button>
+    <div id="app">
+      <button type="button" onClick="blockAppAction()">UI Block</button>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      const blockBodyAction = (() => {
+        console.log('blocking body');
+        uiBlock();
+        setTimeout(() => {
+                uiUnBlock();
+                console.log('unblocking');
+            }, 5000);
+        });
+        const blockAppAction = (() => {
+        console.log('blocking app');
+        uiBlock({selector: '#app', text: 'Hold on a sec...'});
+        setTimeout(() => {
+                uiUnBlock();
+                console.log('unblocking');
+            }, 2000);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+---
+
+version: "3"
+
+services:
+  example-basic:
+    container_name: uiblock-example
+    build: .
+    ports:
+      - 5173:5173
+    command: "sh -c 'npm install ; npm run dev'"
+    volumes:
+      - ../:/srv/app
