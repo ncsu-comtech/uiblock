@@ -3,11 +3,6 @@
   "version": "0.0.3",
   "description": "Javascript module that halts UI interaction while a process completes.",
   "main": "src/index.js",
-  "exports": {
-    ".": {
-      "svelte": "./src/index.js"
-    }
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
