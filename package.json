@@ -1,10 +1,12 @@
 {
-  "name": "uiblock",
-  "version": "0.0.1",
+  "name": "@comtech/uiblock",
+  "version": "0.0.2",
   "description": "Javascript module that halts UI interaction while a process completes.",
-  "main": "uiBlock.js",
-  "directories": {
-    "test": "test"
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "svelte": "./src/index.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,6 @@
   },
   "keywords": ["javascript", "overlay"],
   "author": "G. Paone",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
