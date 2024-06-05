@@ -1,6 +1,6 @@
 {
-  "name": "@comtech/uiblock",
-  "version": "0.0.2",
+  "name": "@haught/uiblock",
+  "version": "0.0.3",
   "description": "Javascript module that halts UI interaction while a process completes.",
   "main": "src/index.js",
   "exports": {
@@ -8,10 +8,10 @@
       "svelte": "./src/index.js"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gppaone/uiBlock.git"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
+  "repository": "https://github.com/haught/uiblock.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
