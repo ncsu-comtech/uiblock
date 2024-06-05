@@ -1,1 +1,16 @@
+.DS_Store
+*~
+._*
+**/.project
+**/*.iml
+**/.DS_Store
+**/.idea/**
+/.idea/
+.settings
+/node_modules/
+/dist/build
+/coverage/
+/build
+/dist
+package-lock.json
 /test
