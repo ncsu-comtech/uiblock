@@ -1,4 +1,4 @@
-(() => {
+const UiBlock = (() => {
     let uiBlockElement = document.createElement('div');
     let uiBlockMessageElement = document.createElement('div');
     uiBlockElement.appendChild(uiBlockMessageElement);
@@ -6,7 +6,6 @@
 
     window.uiBlock = (options = {}) => {
         let parent = document.querySelector(options.selector) || document.body;
-        console.log(parent);
         uiBlockMessageElement.innerHTML = options.text || 'Just a moment...';
         if (document.querySelector(options.selector)) {
             uiBlockElement.style.position = 'absolute';
@@ -27,3 +26,5 @@
         }
     }
 })();
+
+export default {UiBlock};
