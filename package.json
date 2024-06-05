@@ -1,6 +1,6 @@
 {
   "name": "@haught/uiblock",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Javascript module that halts UI interaction while a process completes.",
   "main": "src/index.js",
   "publishConfig": {
