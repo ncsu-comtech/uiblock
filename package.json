@@ -1,6 +1,6 @@
 {
   "name": "@ncsu-comtech/uiblock",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Javascript module that halts UI interaction while a process completes.",
   "main": "src/index.js",
   "publishConfig": {
