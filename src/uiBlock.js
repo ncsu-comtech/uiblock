@@ -1,29 +1,24 @@
 (() => {
-    let uiBlockElement = document.createElement('div');
-    let uiBlockMessageElement = document.createElement('div');
-    uiBlockElement.appendChild(uiBlockMessageElement);
-    uiBlockElement.classList.add('ui-block');
 
     window.uiBlock = (options = {}) => {
         let parent = document.querySelector(options.selector) || document.body;
-        console.log(parent);
-        uiBlockMessageElement.innerHTML = options.text || 'Just a moment...';
-        if (document.querySelector(options.selector)) {
-            uiBlockElement.style.position = 'absolute';
-        }
-        parent.appendChild(uiBlockElement);
+        const block = document.createElement("div");
+        block.setAttribute("id", "ui-block");
+        const msgblock = document.createElement("div");
+        msgblock.setAttribute("id", "ui-block-msg");
+        const msg = document.createElement("p");
+        msg.innerText = options.text || 'Just a moment...';
+        msgblock.appendChild(msg);
+        parent.appendChild(block);
+        parent.appendChild(msgblock);
     }
 
     window.uiUnBlock = () => {
-        let element = document.querySelector('.ui-block');
-        if (element) {
-            element.classList.add('ui-block-closing');
-            setTimeout(() => {
-                if (element) {
-                    element.classList.remove('ui-block-closing');
-                    element.parentElement.removeChild(element);
-                }
-            }, 250);
-        }
+        const block = document.getElementById("ui-block");
+        block.style.opacity = '0';
+        block.addEventListener('transitionend', () => block.remove());
+        const msg = document.getElementById("ui-block-msg");
+        msg.style.opacity = '0';
+        msg.addEventListener('transitionend', () => msg.remove());
     }
 })();
