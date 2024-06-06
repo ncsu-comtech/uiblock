@@ -1,5 +1,5 @@
 {
-  "name": "@comtech/uiblock",
+  "name": "@ncsu-comtech/uiblock",
   "version": "0.0.5",
   "description": "Javascript module that halts UI interaction while a process completes.",
   "main": "src/index.js",
