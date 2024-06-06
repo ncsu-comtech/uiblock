@@ -1,5 +1,4 @@
-(() => {
-
+const UiBlock = (() => {
     window.uiBlock = (options = {}) => {
         let parent = document.querySelector(options.selector) || document.body;
         const block = document.createElement("div");
@@ -22,3 +21,5 @@
         msg.addEventListener('transitionend', () => msg.remove());
     }
 })();
+
+export default {UiBlock};
