@@ -1,18 +1,18 @@
-name: Publish package to GitHub Packages
+---
+name: Publish package to local NPM registry
 on:
   push:
     tags:
-    - '*'
+      - '*'
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: afhlab
     steps:
       - uses: actions/checkout@v4
-      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://npmreg.lab.ncsu.net/'
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.CT_NPM_TOKEN }}
